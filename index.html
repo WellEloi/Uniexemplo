@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Meu Site - Home</title>
+</head>
+
+<body>
+
+    <section class="lading-section">
+        <div>
+            <h1 class="lading-section-header">
+                Aprenda com os melhores professores
+            </h1>
+            <p class="lading-section-subheader">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra erat eu libero volutpat
+                accumsan.
+                Praesent diam orci, imperdiet sed euismod sed, accumsan eget dui. Duis vitae porta quam. Aliquam at
+                luctus
+                tellus. Nam euismod convallis sapien non dapibus. Integer maximus luctus mauris vel tempor. Duis feugiat
+                fermentum finibus. Curabitur turpis libero, congue sed aliquam a, scelerisque in sapien. Fusce luctus
+                ligula
+                metus, at aliquet mauris lobortis non. Donec aliquam vulputate congue. Integer sit amet blandit magna.
+            </p>
+            <div class="lading-section-action-buttons">
+                <a href="#inscricao" class="cta-button">Inscreva-se</a>
+                <a href="#saiba-mais" class="cta-button-alternative">Saiba mais</a>
+            </div>
+        </div>
+        <div>
+            <div style="width: 600px; box-shadow: inset;">
+                <img src="img/formando.jpg" style="width: 100%;">
+            </div>
+        </div>
+    </section>
+
+    <section id="inscricao">
+        <form id="inscricao-form">
+            <span style="text-align: center;">Inscreva-se</span>
+            <div style="display: flex; flex-direction: column;gap: 1rem;">
+                <label for="nome">Nome*</label>
+                <input type="text" name="nome" style="padding: 1rem;" required>
+            </div>
+            <div style="display: flex; flex-direction: column;gap: 1rem;">
+                <label for="email" >Email*</label>
+                <input type="text" name="email" style="padding: 1rem;" required>
+            </div>
+            <div style="display: flex; flex-direction: column;gap: 1rem;">
+                <label for="">Curso*</label>
+                <select type="text" style="padding: 1rem;" required>
+                    <option value="engenharia">Engenharia Civil</option>
+                    <option value="direito">Direito</option>
+                    <option value="administracao">Administração</option>
+                </select>
+            </div>
+            <button type="submit" id="inscricao-form-submit-button"
+                style="padding: 1rem;background-color: #4CAF50; border: none;color: white; font-size: 20px; display: flex; justify-content: center; align-items: center;gap: 1rem;">
+                <span id="loader" style="display: none;"></span>
+                Concluir
+            </button>
+            <div id="feedback" style="display: none;">
+                Salvo com sucesso!
+            </div>
+        </form>
+    </section>
+
+    <section id="saiba-mais" style="background-color: #ecf0f1; min-height: 50vh;">
+        <h1>Saiba mais</h1>
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet eleifend diam, ac facilisis nisi.
+            Aenean rutrum felis quis mauris blandit, sed euismod turpis imperdiet. Quisque sagittis vestibulum
+            scelerisque. Nam pharetra, mauris nec hendrerit semper, ante sapien tempor arcu, et commodo odio lorem a
+            libero. Nulla eleifend aliquet sem viverra varius. Donec facilisis erat id tincidunt pretium. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Sed molestie tortor sed ex volutpat, vel posuere massa
+            interdum. Etiam nisi augue, lacinia sed laoreet eu, porttitor ut turpis. Suspendisse in arcu ac est viverra
+            euismod. Donec elementum nulla et venenatis pulvinar. Aliquam sed ante nec lacus scelerisque auctor sed ut
+            felis.
+
+            Maecenas pulvinar ligula lorem, sed accumsan magna faucibus ac. Sed a fringilla massa. Nam feugiat ante ex,
+            sit amet maximus tellus bibendum et. Proin placerat elit id massa dapibus volutpat a et diam. Duis nec nunc
+            vel nunc gravida bibendum. Integer dignissim dui sit amet hendrerit convallis. Mauris viverra laoreet est.
+            Donec ex nisl, suscipit ornare sollicitudin vel, dignissim vel diam. Cras porta justo purus, id tempus
+            lectus faucibus in. Integer enim lorem, laoreet fringilla dictum interdum, commodo nec metus. Duis consequat
+            in lacus ac efficitur.
+
+            Etiam vitae arcu a enim aliquam ullamcorper. In ac neque aliquet eros laoreet aliquet ut sed nisl. Mauris
+            eget commodo turpis. Nulla ultrices tortor a turpis molestie, interdum faucibus turpis dictum. Etiam sit
+            amet ipsum a orci iaculis porta. Fusce sollicitudin rutrum turpis eget ornare. Vestibulum vel nisl metus.
+            Proin malesuada at dui a tristique. Praesent interdum ligula mollis, malesuada augue at, dictum dui. Vivamus
+            in sapien nisi. Vivamus et lorem ac dolor maximus malesuada nec et leo.
+
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce tristique leo
+            elit, id varius mauris aliquam et. Aenean mauris sem, faucibus ac convallis sed, tempor et leo. Nunc
+            tristique purus metus, nec eleifend nisl placerat non. Aenean ut felis suscipit, ultricies est quis, euismod
+            leo. Curabitur nec tincidunt diam, quis bibendum eros. Fusce mauris ligula, dictum vel condimentum maximus,
+            imperdiet sodales enim. Nam sodales blandit urna, eget luctus erat tristique sit amet.
+
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean vestibulum consectetur risus in rutrum.
+            Nullam eros libero, facilisis vitae laoreet sit amet, euismod a libero. Quisque nec volutpat eros. In luctus
+            consequat turpis ultricies viverra. Etiam vitae magna venenatis, finibus est eu, dapibus eros. Cras aliquam
+            posuere condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+            egestas. Vestibulum lacus dui, rutrum sit amet feugiat sed, ornare eget sapien. Donec feugiat tempor urna,
+            vitae egestas magna. Nulla auctor leo id finibus dignissim. Nam feugiat varius est, et accumsan nunc
+            vestibulum in. Mauris tristique magna in venenatis convallis. Mauris accumsan dui vel pulvinar efficitur.
+            Nam et risus elit.
+        </span>
+    </section>
+</body>
+
+<script>
+    function submitHandler(e) {
+        e.preventDefault();
+        document.getElementById('inscricao-form-submit-button').disabled = true;
+
+        const loader = document.getElementById('loader');
+        if (loader.style.display == 'none') {
+            loader.style.display = 'block';
+        } 
+        setTimeout(() => {
+            loader.style.display = 'none';
+            document.getElementById('inscricao-form-submit-button').disabled = false;
+            document.getElementById('feedback').style.display = 'block';
+            setTimeout(()=>{
+                document.getElementById('feedback').style.display = 'none';
+            },1500)
+        }, 1500);
+    }
+
+    document.getElementById('inscricao-form').addEventListener('submit', submitHandler);
+</script>
+
+</html>

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #34495e;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.lading-section {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    color: white;
+}
+
+.lading-section-header {
+    font-size: 60px;
+}
+
+.lading-section-subheader {
+    line-height: 30px;
+}
+
+.lading-section-action-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+#inscricao {
+    background-color: #2980b9;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inscricao form {
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 2em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.cta-button-alternative {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#loader {
+    width: 38px;
+    height: 38px;
+    border: 5px solid #FFF;
+    border-bottom-color: #555;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
