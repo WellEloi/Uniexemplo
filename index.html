@@ -44,15 +44,15 @@
             <span style="text-align: center;">Inscreva-se</span>
             <div style="display: flex; flex-direction: column;gap: 1rem;">
                 <label for="nome">Nome*</label>
-                <input type="text" name="nome" style="padding: 1rem;" required>
+                <input id="nome" type="text" name="nome" style="padding: 1rem;" required>
             </div>
             <div style="display: flex; flex-direction: column;gap: 1rem;">
                 <label for="email" >Email*</label>
-                <input type="text" name="email" style="padding: 1rem;" required>
+                <input id="email" type="text" name="email" style="padding: 1rem;" required>
             </div>
             <div style="display: flex; flex-direction: column;gap: 1rem;">
                 <label for="">Curso*</label>
-                <select type="text" style="padding: 1rem;" required>
+                <select id="curso" type="text" style="padding: 1rem;" required>
                     <option value="engenharia">Engenharia Civil</option>
                     <option value="direito">Direito</option>
                     <option value="administracao">Administração</option>
@@ -117,6 +117,11 @@
         e.preventDefault();
         document.getElementById('inscricao-form-submit-button').disabled = true;
 
+        // SALVANDO AS VARIÁVEIS DO FORMULÁRIO
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const curso = document.getElementById('curso').value;
+        
         const loader = document.getElementById('loader');
         if (loader.style.display == 'none') {
             loader.style.display = 'block';
